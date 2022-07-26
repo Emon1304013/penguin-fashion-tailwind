@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+    <script src="https://kit.fontawesome.com/8d1926dd16.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,23 +13,38 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                pColor: '#3E3E3E',
+                penguin:'#fffbf0',
+
               }
             }
           }
         }
       </script>
+      <link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
-    <header>
-        <h1 class="text-5xl uppercase">
-            <span class="text-yellow-400">Be the Penguin</span><br>
+    <header class="bg-penguin lg:flex md:flex justify-around lg:px-40 px-12 py-16 mb-12">
+      <div class="flex items-center">
+        <div class="space-y-3">
+          <h1 class="lg:text-5xl text-3xl uppercase">
+            <span class="text-yellow-400">Be the Penguins</span><br>
             <span>Of winter</span>
-        </h1>
+          </h1>
+        <p class="text-xl text-pColor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel quaerat ea eos.</p>
+        <button class="bg-lime-600 uppercase text-white px-5 py-3 rounded-lg"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+        </div>
+    </div>
+
+    <div>
+      <img class=" lg:w-96 md:w-96" src="images/model.png" alt="">
+    </div>
+
     </header>
 
-    <main>
-
+    <main class="container mx-auto">
+      <h1 class="lg:text-5xl"> Woman Jacket</h1>
     </main>
 </body>
 </html>
